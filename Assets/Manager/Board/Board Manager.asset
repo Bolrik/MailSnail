@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1dedd95fa7f9ea341bbfacacef2e577d, type: 3}
+  m_Name: Board Manager
+  m_EditorClassIdentifier: 
+  <GameData>k__BackingField: {fileID: 11400000, guid: f0a32808f930697459660988d8863ccf, type: 2}
+  <ScaleX>k__BackingField: 19
+  <ScaleY>k__BackingField: 11
+  <Debug>k__BackingField: 54512
+  <SlideShow>k__BackingField: 0

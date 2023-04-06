@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74a4f92b86c54594c82cceafcd597960, type: 3}
+  m_Name: Game Data
+  m_EditorClassIdentifier: 
+  <PrefabData>k__BackingField: {fileID: 11400000, guid: db373152c1869b84d90651804bbc65c5, type: 2}
+  <TileDataPool>k__BackingField: {fileID: 11400000, guid: c236050e7419a71409b30528e4a65edd, type: 2}
+  <TileContentDataPool>k__BackingField: {fileID: 11400000, guid: fe3968541c9d152429498e3dafd69cea, type: 2}
+  <ItemPool>k__BackingField: {fileID: 11400000, guid: 0bda149b1b11ed348ad269986f424298, type: 2}
+  <GameManager>k__BackingField: {fileID: 11400000, guid: 67d4069e09633e74585a66f0e92aff10, type: 2}
+  <BoardManager>k__BackingField: {fileID: 11400000, guid: f93b7dd7c6bd12b45a0b859c914304d5, type: 2}
+  <TurnManager>k__BackingField: {fileID: 11400000, guid: 875c32f2b9be0f34cbf4c35ff9cc9a61, type: 2}
+  <UnitControllerManager>k__BackingField: {fileID: 11400000, guid: 0a6d9a537aee5dd41ba7a684184a8769, type: 2}
+  <GameCamera>k__BackingField: {fileID: 11400000, guid: 26d6bb2d67cdc91478e98b76f94f3b01, type: 2}
+  <Input>k__BackingField:
+    <Move>k__BackingField: {fileID: 11400000, guid: 481f8d42dc8950248a37f38b769c2f4c, type: 2}
+    <Menu>k__BackingField: {fileID: 11400000, guid: 295ee293e6b043147b81be388ce15f68, type: 2}

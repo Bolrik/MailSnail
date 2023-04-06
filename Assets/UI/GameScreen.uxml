@@ -1,0 +1,8 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/MainStyleSheet.uss?fileID=7433441132597879392&amp;guid=1d7259d1db434014ba7cb6930d41155b&amp;type=3#MainStyleSheet" />
+    <ui:VisualElement style="flex-direction: column; flex-grow: 1; justify-content: flex-end;">
+        <ui:VisualElement style="height: 144px; align-items: center; justify-content: center;">
+            <ui:Button name="Inventory-Slot" focusable="false" class="button-element text-element inventory-element" style="width: 128px; height: 128px;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

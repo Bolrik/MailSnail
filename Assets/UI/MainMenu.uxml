@@ -1,0 +1,15 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/MainStyleSheet.uss?fileID=7433441132597879392&amp;guid=1d7259d1db434014ba7cb6930d41155b&amp;type=3#MainStyleSheet" />
+    <ui:VisualElement style="flex-direction: row; flex-grow: 1;">
+        <ui:VisualElement style="width: 400px; align-items: center; justify-content: center;">
+            <ui:VisualElement name="Buttons" class="menu-panel">
+                <ui:Button text="Start" display-tooltip-when-elided="true" name="Start" class="menu-element text-element button-element" />
+                <ui:VisualElement class="menu-element" style="padding-left: 10px; padding-right: 10px; padding-top: 10px; padding-bottom: 10px;">
+                    <ui:TextField picking-mode="Ignore" label="Seed" value="123456" text="GDFG 2023-03" name="Seed" class="text-field text-element" style="flex-direction: column;" />
+                </ui:VisualElement>
+                <ui:Button text="Quit" display-tooltip-when-elided="true" name="Quit" class="menu-element text-element button-element" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement style="flex-grow: 1;" />
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d5e6e7ef4963134dbf765ca95272619, type: 3}
+  m_Name: Item Pool
+  m_EditorClassIdentifier: 
+  <Package>k__BackingField: {fileID: 11400000, guid: da59b048df8b9cc48a3908ea3092cf49, type: 2}
+  <Mail>k__BackingField: {fileID: 11400000, guid: c9e8193b2aacefb459bf7f3de1846fd5, type: 2}
