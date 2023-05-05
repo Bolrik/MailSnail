@@ -365,6 +365,8 @@ namespace MailSnail.Board
                 }
             }
 
+            int rangeMin = int.MaxValue;
+
             for (int y = 0; y < this.ScaleY; y++)
             {
                 for (int x = 0; x < this.ScaleX; x++)
@@ -373,10 +375,21 @@ namespace MailSnail.Board
                         continue;
 
                     this.FeatureMap[x, y] -= min;
+
+                    if (x >= 2 && y >= 2 && x < this.ScaleX - 2 && y < this.ScaleY - 2)
+                    {
+                        int fm = this.FeatureMap[x, y];
+
+                        if (fm < rangeMin)
+                            rangeMin = fm;
+                    }
                 }
             }
 
-            Range<int> validRange = new Range<int>(this.Random.Next(1), this.Random.Next(4, 10));
+            int validRangeMin = rangeMin + this.Random.Next(1);
+            int validRangeMax = rangeMin + this.Random.Next(4, 12);
+
+            Range<int> validRange = new Range<int>(validRangeMin, validRangeMax);
             List<Int2D> validPositions = new List<Int2D>();
 
             // Search valid positions

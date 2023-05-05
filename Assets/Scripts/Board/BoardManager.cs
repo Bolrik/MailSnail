@@ -8,7 +8,7 @@ using UnityEngine;
 namespace MailSnail.Board
 {
     [CreateAssetMenu(fileName = "Board Manager", menuName = "Manager/Board/new Board Manager")]
-    public class BoardManager : ManagerComponent
+    public class BoardManager : Manager
     {
         [field: SerializeField, Header("Data")] public GameData GameData { get; private set; }
 
@@ -22,13 +22,10 @@ namespace MailSnail.Board
         private BoardStatePool BoardStatePool { get; set; }
 
 
-        [field: SerializeField] public int Debug { get; private set; } = 0;
+        [field: SerializeField, Header("Debug")] public int Debug { get; private set; } = 0;
+        [field: SerializeField] public bool DebugCreate { get; private set; }
 
-        [field: SerializeField] public bool SlideShow { get; private set; }
-        float Timer { get; set; }
-
-
-        public override void DoAwake()
+        public override void SystemAwake()
         {
             this.BoardStatePool = new BoardStatePool();
             this.Board = new Board();
@@ -44,20 +41,14 @@ namespace MailSnail.Board
         //    this.Board.LoadState(state);
         //}
 
-        public override void DoUpdate()
+        public override void SystemUpdate()
         {
-            if (!this.SlideShow)
+            if (!this.DebugCreate)
                 return;
 
-            this.Timer += Time.deltaTime;
-
-            if (this.Timer > 3)
-            {
-                this.Debug++;
-                this.Create(this.Debug);
-                this.Load(this.Debug);
-                this.Timer = 0;
-            }
+            this.Create(this.Debug);
+            this.Load(this.Debug);
+            this.DebugCreate = false;
         }
 
 

@@ -8,7 +8,7 @@ using UnityEngine;
 namespace MailSnail.GameCamera
 {
     [CreateAssetMenu(fileName = "Game Camera Manager", menuName = "Managers/Camera/new Game Camera Manager")]
-    public class GameCameraManager : ManagerComponent
+    public class GameCameraManager : Manager
     {
         [field: SerializeField, Header("Settings")] private GameCameraSettings Settings { get; set; }
         [field: SerializeField, Header("Exchange")] public GameCameraExchange Exchange { get; set; }
@@ -21,22 +21,12 @@ namespace MailSnail.GameCamera
 
 
 
-        public override void DoAwake()
+        public override void SystemAwake()
         {
             this.Exchange = new GameCameraExchange();
         }
 
-        public override void DoStart()
-        {
-
-        }
-
-        public override void DoUpdate()
-        {
-
-        }
-
-        public override void DoLateUpdate()
+        public override void SystemLateUpdate()
         {
             if (this.Targets.Length == 0) return;
 

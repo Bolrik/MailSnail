@@ -1,8 +1,8 @@
-﻿using FreschGames.Core.Systems;
+﻿using FreschGames.Core.Managers;
 
 namespace MailSnail.Board
 {
-    public class BoardSystem : SystemComponent<BoardManager>
+    public class BoardSystem : ManagerSystem<BoardManager>
     {
 
     }

@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1dedd95fa7f9ea341bbfacacef2e577d, type: 3}
   m_Name: Board Manager
   m_EditorClassIdentifier: 
+  <IsScenePersistent>k__BackingField: 0
   <GameData>k__BackingField: {fileID: 11400000, guid: f0a32808f930697459660988d8863ccf, type: 2}
   <ScaleX>k__BackingField: 19
   <ScaleY>k__BackingField: 11
-  <Debug>k__BackingField: 54512
-  <SlideShow>k__BackingField: 0
+  <Debug>k__BackingField: 1021692595
+  <DebugCreate>k__BackingField: 0

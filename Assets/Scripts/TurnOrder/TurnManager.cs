@@ -8,7 +8,7 @@ using UnityEngine;
 namespace MailSnail.TurnOrder
 {
     [CreateAssetMenu(fileName = "Turn Manager", menuName = "Manager/Turn Order/new Turn Manager")]
-    public class TurnManager : ManagerComponent
+    public class TurnManager : Manager
     {
         List<Unit> Units { get; set; }
         Queue<Unit> Queue { get; set; }
@@ -17,7 +17,7 @@ namespace MailSnail.TurnOrder
 
         public Action<TurnToken> OnNewToken { get; set; }
 
-        public override void DoAwake()
+        public override void SystemAwake()
         {
             this.Units = new List<Unit>();
             this.Queue = new Queue<Unit>();
@@ -25,7 +25,7 @@ namespace MailSnail.TurnOrder
             this.CurrentToken = null;
         }
 
-        public override void DoUpdate()
+        public override void SystemUpdate()
         {
             if (this.CurrentToken == null)
             {

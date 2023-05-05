@@ -38,7 +38,7 @@ namespace MailSnail.Units
             if (this.Move.IsPressed)
                 this.AutoMoveTimer = (this.AutoMoveTimer - Time.deltaTime).ClampMin(0);
             else
-                this.AutoMoveTimer = 0.5f;
+                this.AutoMoveTimer = 0.1f;
 
             if (!this.Move.WasPressed && !this.AutoMove)
                 return;

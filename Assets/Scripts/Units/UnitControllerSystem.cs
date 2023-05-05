@@ -1,8 +1,8 @@
-﻿using FreschGames.Core.Systems;
+﻿using FreschGames.Core.Managers;
 
 namespace MailSnail.Units
 {
-    public class UnitControllerSystem : SystemComponent<UnitControllerManager>
+    public class UnitControllerSystem : ManagerSystem<UnitControllerManager>
     {
 
     }

@@ -1,10 +1,11 @@
-﻿using MailSnail.Board;
+﻿using FreschGames.Core.Input;
+using MailSnail.Board;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 namespace MailSnail.Input
 {
-    public class GameInputSystem : FreschGames.Core.Input.InputManagerBase
+    public class GameInputSystem : InputComponent
     {
         protected override IInputActionCollection2 GetInputAssetObject()
         {

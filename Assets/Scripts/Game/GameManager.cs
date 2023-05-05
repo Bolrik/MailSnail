@@ -9,7 +9,7 @@ using UnityEngine;
 namespace MailSnail.Game
 {
     [CreateAssetMenu(fileName = "Game Manager", menuName = "Manager/Game/new Game Manager")]
-    public class GameManager : ManagerComponent
+    public class GameManager : Manager
     {
         [field: SerializeField, Header("Data")] public GameData Data { get; private set; }
         [field: SerializeField, Header("Settings")] public GameSettings Settings { get; private set; }
@@ -20,7 +20,7 @@ namespace MailSnail.Game
         bool IsLoaded { get; set; }
         Unit Player { get; set; }
 
-        public override void DoStart()
+        public override void SystemStart()
         {
             BoardManager boardManager = this.Data.BoardManager;
             Transform[] targets = new[]
@@ -40,7 +40,7 @@ namespace MailSnail.Game
             this.SceneManager.Load(1);
         }
 
-        public override void DoUpdate()
+        public override void SystemUpdate()
         {
             if (this.Data.Input.Menu.WasPressed)
             {

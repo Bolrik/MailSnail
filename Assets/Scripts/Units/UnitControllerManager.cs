@@ -8,7 +8,7 @@ using UnityEngine;
 namespace MailSnail.Units
 {
     [CreateAssetMenu(fileName = "Unit Controller Manager", menuName = "Manager/Unit/new Unit Controller Manager")]
-    public class UnitControllerManager : ManagerComponent
+    public class UnitControllerManager : Manager
     {
         [field: SerializeField, Header("Data")] public GameData GameData { get; private set; }
 
@@ -20,30 +20,15 @@ namespace MailSnail.Units
 
         public Action<UnitController> OnNewUnitController { get; set; }
 
-        public override void DoAwake()
+        public override void SystemAwake()
         {
             this.ActiveTurnToken = null;
             this.UnitControllers = new List<UnitController>();
         }
 
-        public override void DoStart()
+        public override void SystemStart()
         {
             this.GameData.TurnManager.OnNewToken += this.TurnManager_OnNewToken;
-        }
-
-        public override void DoUpdate()
-        {
-            //TurnToken current = this.GameData.TurnManager.CurrentToken;
-
-            //if (this.ActiveTurnToken != current)
-            //{
-            //    // Changed?
-            //}
-        }
-
-        public override void DoLateUpdate()
-        {
-
         }
 
         public UnitController Get(int faction)
